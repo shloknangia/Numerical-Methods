@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.numericalmethods">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".bisection"
+            android:label="@string/title_activity_bisection"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".secant"
+            android:label="@string/title_activity_secant"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".lagrange"
+            android:label="@string/title_activity_lagrange"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".simpson"
+            android:label="@string/title_activity_simpson"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".trapezoidal"
+            android:label="@string/title_activity_trapezoidal"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".infobisection"
+            android:label="@string/title_activity_infobisection"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".infosecant"
+            android:label="@string/title_activity_infosecant"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".infolagrange"
+            android:label="@string/title_activity_infolagrange"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".infosimpson"
+            android:label="@string/title_activity_infosimpson"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".infotrapezoidal"
+            android:label="@string/title_activity_infotrapezoidal"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".help"
+            android:label="@string/title_activity_help"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

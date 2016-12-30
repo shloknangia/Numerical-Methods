@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Numerical Methods</string>
+    <string name="credits">Credits</string>
+    <string name="title_activity_bisection">bisection</string>
+    <string name="title_activity_secant">secant</string>
+    <string name="title_activity_lagrange">lagrange</string>
+    <string name="title_activity_simpson">simpson</string>
+    <string name="title_activity_trapezoidal">trapezoidal</string>
+    <string name="title_activity_infobisection">About Bisection</string>
+    <string name="title_activity_infosecant">About Secant</string>
+    <string name="title_activity_infolagrange">About Lagrange</string>
+    <string name="title_activity_infosimpson">About Simpson\'s Rule</string>
+    <string name="title_activity_infotrapezoidal">About Trapezoidal\'s Rule</string>
+    <string name="title_activity_help">Help</string>
+</resources>

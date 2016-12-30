@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.android.numericalmethods.simpson"
+    tools:showIn="@layout/activity_simpson">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter a"
+        android:id="@+id/simptext1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal|numberSigned"
+        android:text="0"
+        android:id="@+id/simpedit1"
+        android:layout_toRightOf="@id/simptext1" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter b"
+        android:id="@+id/simptext2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="70dp"/>
+    <EditText
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/simpedit2"
+        android:inputType="numberDecimal|numberSigned"
+        android:text="0"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentRight="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/simptext1"
+        android:text="Number of subintervals"
+        android:layout_marginTop="70dp"
+        android:id="@+id/simptext3" />
+
+    <EditText
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/simpedit3"
+        android:layout_marginLeft="10dp"
+        android:inputType="numberDecimal|numberSigned"
+        android:layout_below="@id/simpedit1"
+        android:text="0"
+        android:layout_marginTop="40dp"
+        android:layout_toRightOf="@id/simptext3"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/simpll"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:layout_below="@id/simpedit3">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="f (x): "
+            android:textSize="20dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:text="0"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal|numberSigned"
+            android:id="@+id/psr1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="x^2 +"
+            android:textSize="20dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal|numberSigned"
+            android:text="0"
+            android:id="@+id/psr2"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="x +"
+            android:textSize="20dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal|numberSigned"
+            android:text="0"
+            android:id="@+id/psr3"/>
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/calculatesimp"
+        android:layout_below="@id/simpll"
+        android:textColor="#ffffff"
+        android:layout_marginTop="20dp"
+        android:onClick="calculatesimpson"/>
+    <View
+        android:layout_width="match_parent"
+        android:background="#a9a9a9"
+        android:layout_height="1dp"
+        android:id="@+id/view4"
+        android:layout_below="@id/calculatesimp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Output"
+        android:textSize="30dp"
+        android:id="@+id/output4"
+        android:layout_below="@id/view4"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/printoutput4"
+        android:textSize="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/output4"/>
+
+</RelativeLayout>
