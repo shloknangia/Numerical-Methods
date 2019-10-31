@@ -24,7 +24,7 @@ public class help extends AppCompatActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-
+        // Check if the back button is pressed
         if(id == android.R.id.home) {
             this.finish();
             return true;
